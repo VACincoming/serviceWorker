@@ -1,6 +1,6 @@
 import { loadImageSync } from './mockAPI';
 
-const TIME_BEFORE_REMOVING_IMG = 3000;
+const TIME_BEFORE_REMOVING_IMG = 30000;
 const TIME_FOR_UPDATING_CLOCK = 1000;
 
 
@@ -17,7 +17,7 @@ function renderImage(srcUrl) {
 
   setTimeout(() => {
     document.body.removeChild(img);
-  }, TIME_BEFORE_REMOVING_IMG)
+  }, TIME_BEFORE_REMOVING_IMG) 
 }
 
 // Start timer when load the page

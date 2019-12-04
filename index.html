@@ -21,11 +21,12 @@
 </div>
 <script type="application/javascript" src="bundle.js"></script>
 <script>
+  //navigator object which contains information about visitor`s browser
   if ('serviceWorker' in navigator) {
     navigator.serviceWorker.register('sw.js').then(registration => {
       console.log('[ServiceWorker] Registration', registration);
     })
-        .catch(err => console.log('[ServiceWorker] Registration failed.', err))
+    .catch(err => console.log('[ServiceWorker] Registration failed.', err))
   }
 </script>
 </body>

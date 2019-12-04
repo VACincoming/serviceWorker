@@ -3,7 +3,7 @@
 
 var _mockAPI = require("./mockAPI");
 
-var TIME_BEFORE_REMOVING_IMG = 3000;
+var TIME_BEFORE_REMOVING_IMG = 30000;
 var TIME_FOR_UPDATING_CLOCK = 1000;
 
 function renderSeconds(element) {
